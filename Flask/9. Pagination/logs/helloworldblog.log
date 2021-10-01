@@ -1,0 +1,21 @@
+2020-07-31 02:05:06,427 ERROR: Exception on /user/Susan [GET] [in C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\routes.py", line 94, in user
+    form = EmptyForm()
+NameError: name 'EmptyForm' is not defined
+2020-07-31 02:09:42,130 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\__init__.py:55]
+2020-07-31 02:12:59,027 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\__init__.py:55]

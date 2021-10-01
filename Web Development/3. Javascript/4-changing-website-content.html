@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Website Content</title>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Changing Website Content</h1>
+
+    <p id="my-text">
+        Javascript is
+    </p>
+
+    <button id="append-button">
+        Append text
+    </button>
+
+    <button id="make-text-appear-button">
+        Click to make more text appear!
+    </button>
+
+    <p id="empty-paragraph"></p>
+
+    <script type="text/javascript">
+        // This is a comment in Javascript
+
+        /*
+            This is a multiline comment in Javascript
+        */
+        document.getElementById("append-button").onclick = function()
+        {
+            document.getElementById('my-text').innerHTML = "I think " + document.getElementById("my-text").innerHTML + " awesome!"; 
+        }
+
+        document.getElementById("make-text-appear-button").onclick = function() 
+        {
+            document.getElementById("empty-paragraph").innerHTML = "This text was inserted using Javascript";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detecting a Click</title>
+    
+    <!--Script to embed jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <style type="text/css">
+        body {
+            
+        font-family: 'Roboto', sans-serif;
+        }
+        #green-circle 
+        {
+            width: 5em;
+            height: 5em;
+            background-color: green;
+            border-radius: 50%;
+            border: thick solid black;
+            margin: 1em;
+        }
+        .red-square {
+            width: 5em;
+            height: 5em;
+            background-color: indianred;
+            border: thick solid black;
+            margin: 1em;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="green-circle"></div>
+    <div class="red-square"></div>
+    <div class="red-square"></div>
+    
+    <script type="text/javascript">
+
+        $("#green-circle").click(function()
+        {
+            alert("Circle was clicked");
+        });
+
+    </script>
+
+</body>
+</html>

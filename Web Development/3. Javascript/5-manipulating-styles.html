@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating Styles with Js</title>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Manipulating Styles with Js</h1>
+
+    <p id="my-text">
+        The quick brown fox jumped over the lazy dog
+    </p>
+
+    <button id="change-text-color-button">
+        Change text color!
+    </button>
+
+    <p id="my-text2">
+        The quick brown fox jumped over the lazy dog
+    </p>
+
+    <button id="make-text-larger-button">
+        Click to make text larger!
+    </button>
+
+    <p id="my-text3">
+        The quick brown fox jumped over the lazy dog
+    </p>
+
+    <button id="make-text-disappear-button">
+        Click to make text disappear!
+    </button>
+
+    <script type="text/javascript">
+        // This is a comment in Javascript
+
+        /*
+            This is a multiline comment in Javascript
+        */
+        document.getElementById("change-text-color-button").onclick = function()
+        {
+            document.getElementById('my-text').style.color = "indianred"; 
+        }
+
+        document.getElementById("make-text-larger-button").onclick = function() 
+        {
+            document.getElementById("my-text2").style.fontSize = "150%";
+        }
+
+        document.getElementById("make-text-disappear-button").onclick = function()
+        {
+            document.getElementById("my-text3").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

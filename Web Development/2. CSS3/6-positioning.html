@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+
+    <style type="text/css">
+        /*You can set the positioning type by using the "position"
+        attribute in CSS.
+
+        There are 3 main types of positions:
+
+            1. Relative: positions the element relative to where
+            it would be originally
+            2. Absolute: positions the element relative to the
+            top left of the display port, but takes it out of the flow
+            of the page
+            3. Fixed: positions de element relative to the top left
+            of the display port, but keeps it in place as you scroll
+
+        After setting the "position" attribute, you can move an 
+        element by using the "left" or "right" attributes 
+        followed by the quantity you'd like to move it by
+        */
+        .relative-pos {
+            position: relative;
+        }
+        .absolute-pos {
+            position: absolute;
+        }
+        .fixed-pos {
+            position: fixed;
+        }
+        div {
+            background-color: gray;
+            color: whitesmoke;
+            font-size: large;
+            width: 400px;
+        }
+        #first-div {
+            left: 200px;
+        }
+        #second-div {
+            right: 100px;
+        }
+        #second-div > p {
+            position: relative;
+            left: 110px
+        }
+        #third-div {
+            left: 100px;
+            top: 100px;
+            z-index: 1;
+        }
+        #fourth-div {
+            background-color: blue;
+            height: 200px;
+        }
+        #fourth-div > p {
+            position: relative;
+            top: 100px;
+        }
+        #fifth-div {
+            top: 3000px;
+        }
+        #sixth-div {
+            left: 900px;
+            top: 100px
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Positioning</h1>
+    <div class="relative-pos" id="first-div">
+        <p>Relatively positioned div #1</p>
+        <p>Moved left</p>
+    </div>
+    <div class="relative-pos" id="second-div">
+        <p>Relatively positioned div #2</p>
+        <p>Moved right</p>
+    </div>
+    <div class="relative-pos" id="third-div">
+        <p>Relatively positioned div #3</p>
+        <p>Brought forward</p>
+    </div>
+    <div class="relative-pos" id="fourth-div">
+        <p>Relatively positioned div #4</p>
+        <p>Left as is</p>
+    </div>
+    <div class="absolute-pos" id="fifth-div">
+        <p>Absolutely positioned div at the bottom of the page</p>
+    </div>
+    <div class="fixed-pos" id="sixth-div">
+        <p>This is a fixed div. It will stay in place as you scroll</p>
+    </div>
+</body>
+</html>

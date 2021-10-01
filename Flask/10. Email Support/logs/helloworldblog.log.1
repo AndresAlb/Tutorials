@@ -1,0 +1,102 @@
+2020-07-30 20:07:09,534 ERROR: Exception on /index [GET] [in C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\routes.py", line 34, in index
+    return render_template('index.html', title = 'Home', posts = posts)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\templates\index.html", line 25, in template
+    {% include '_post.html' %at}
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+2020-07-30 20:07:50,578 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\__init__.py:55]
+2020-07-30 20:11:28,950 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\__init__.py:55]
+2020-07-30 20:13:17,490 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\__init__.py:55]
+2020-07-30 20:13:28,862 ERROR: Exception on /index [GET] [in C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\routes.py", line 34, in index
+    return render_template('index.html', title = 'Home Page', form = form, posts = posts)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\templates\base.html", line 36, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\templates\index.html", line 28, in block "content"
+    {% include '_post.html' %}
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\templates\_post.html", line 7, in top-level template code
+    <a href="{{ url_for('user', post.author.username) }}"></a> says: <br> {{ post.body }}
+TypeError: url_for() takes 1 positional argument but 2 were given
+2020-07-30 20:15:11,822 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\__init__.py:55]
+2020-07-30 20:16:54,085 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\__init__.py:55]
+2020-07-31 01:38:06,251 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\__init__.py:55]
+2020-07-31 02:02:00,612 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\__init__.py:55]
+2020-07-31 02:04:14,173 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\__init__.py:55]
+2020-07-31 02:04:52,301 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\__init__.py:55]
+2020-07-31 02:05:01,891 ERROR: Exception on /user/Susan [GET] [in C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\routes.py", line 94, in user
+    form = EmptyForm()
+NameError: name 'EmptyForm' is not defined

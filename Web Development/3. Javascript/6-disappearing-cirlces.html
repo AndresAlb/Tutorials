@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disappearing Circles</title>
+
+    <style>
+        body {
+            
+        font-family: 'Roboto', sans-serif;
+        }
+        .circle {
+            width: 4em;
+            height: 4em;
+            border-radius: 50%;
+            border: thick black solid;
+        }
+        #red-div {
+            background-color: indianred;
+        }
+        #blue-div {
+            background-color: skyblue;
+        }
+        #yellow-div {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Disappearing Circles</h1>
+
+    <div class="circle" id="red-div"></div>
+    <div class="circle" id="blue-div"></div>
+    <div class="circle" id="yellow-div"></div>
+
+    <script type="text/javascript">
+
+        var doc = document;
+
+        var redCircle = doc.getElementById("red-div");
+        var blueCircle = doc.getElementById("blue-div");
+        var yellowCircle = doc.getElementById("yellow-div");
+
+        redCircle.onclick = function()
+        {
+            redCircle.style.display = "none";
+        }
+        
+        blueCircle.onclick = function()
+        {
+            blueCircle.style.display = "none";
+        }
+
+        yellowCircle.onclick = function()
+        {
+            yellowCircle.style.display = "none";
+        }
+        
+    </script>
+</body>
+</html>

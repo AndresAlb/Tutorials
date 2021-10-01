@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        You can embed a font using the <link> tag and placing it in the 
+        head of the document
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Font & Text Styling</title>
+
+    <style type="text/css">
+        body {
+            font-size: 150%;
+        }
+        #arial-paragraph {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .roboto-font {
+            font-family: 'Roboto', sans-serif;
+        }
+        .italics {
+            font-style: italic;
+        }
+        /*
+            Learn more about selectors at https://www.w3schools.com/cssref/css_selectors.asp
+        */
+        :link {
+            text-decoration: none;
+        }
+        :link:hover {
+            text-decoration: underline;
+            color: yellowgreen;
+        }
+        :link:visited {
+            color: rebeccapurple;
+        }
+        div {
+            margin-top: 1em;
+            padding: 1em 1em;
+            background-color: gray;
+            color: whitesmoke;
+            width: 40em;
+            height: 6em;
+        }
+        #centered {
+            text-align: center;
+        }
+        #right-aligned-text {
+            text-align: right;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Font & Text Styling</h1>
+
+    <p id="arial-paragraph">
+        "The quick brown fox jumped over the lazy dog" but written in Arial
+    </p>
+
+    <p class="roboto-font">
+        "The quick brown fox jumped over the lazy dog" but written in an embedded font
+    </p>
+
+    <p class="roboto-font">
+        <span class="italics">"The quick brown fox jumped over the lazy dog"</span> but written in italics
+    </p>
+
+    <a class="roboto-font" href="">
+        This is an empty non-underlined link
+    </a>
+
+    <div>
+        <p class="roboto-font" id="centered">
+            The quick brown fox jumped over the lazy dog
+        </p>
+
+        <p class="roboto-font" id="right-aligned-text">
+            The quick brown fox jumped over the lazy dog
+        </p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+
+    <style type="text/css">
+        div {
+            background-color: gray;
+            color: whitesmoke;
+            font-size: large;
+            width: 400px;
+        }
+
+        /*
+            Both the margin and the padding properties in CSS can be set
+            in a single go in the following way: 
+
+                padding: top right bottom left;
+                margin: top right bottom left;
+
+            or they can be set symmetrically like so
+
+                padding: top-bottom right-left;
+                margin: top-bottom right-left;
+
+            You can also invoke each side individually by using a dash
+            followed by the side: 
+
+                padding-top: 10em;
+                margin-left: 5em;
+        */
+        #padded-div {
+            padding: 2em 10em;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Padding</h1>
+    <div id="padded-div">
+        <p>
+            This is a div with 2em padding top & bottom and 10em padding on the sides
+        </p>
+    </div>
+</body>
+</html>

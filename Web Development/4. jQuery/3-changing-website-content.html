@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Website Content</title>
+    <!--Script to embed jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        #circle {
+            width: 7em;
+            height: 7em;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: thick solid black;
+            background-color: cornflowerblue;
+            color: whitesmoke;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="circle">
+        <p>Click me</p>
+    </div>
+    <p id="my-text">This text will be changed</p>
+
+    <script>
+        $("#circle").click(function()
+        {
+            $("#my-text").html("This text has changed")
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animating Content</title>
+    <style type="text/css">
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .circle {
+            width: 6em;
+            height: 6em;
+            border-radius: 50%;
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animating Content</h1>
+    <div class="circle" id="circle1"></div>
+
+    <script type="text/javascript">
+        $("#circle1").click(function()
+        {
+            $(this).animate(
+                {width: "12em", height: "12em"}, 
+                {duration: "slow", complete: changeColor(this)});
+        });
+
+        function changeColor(circle)
+        {
+            $(circle).css("background-color", "indianred");
+        }
+    </script>
+</body>
+</html>

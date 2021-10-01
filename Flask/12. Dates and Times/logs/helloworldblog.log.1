@@ -1,0 +1,75 @@
+2020-07-31 02:05:06,427 ERROR: Exception on /user/Susan [GET] [in C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\routes.py", line 94, in user
+    form = EmptyForm()
+NameError: name 'EmptyForm' is not defined
+2020-07-31 02:09:42,130 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\__init__.py:55]
+2020-07-31 02:12:59,027 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\__init__.py:55]
+2020-07-31 21:12:44,352 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\10. Email Support\app\__init__.py:55]
+2020-07-31 21:14:27,813 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\10. Email Support\app\__init__.py:63]
+2020-07-31 21:34:14,368 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\10. Email Support\app\__init__.py:64]
+2020-08-03 23:58:38,182 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\11. Facelift\app\__init__.py:64]
+2020-08-03 23:59:17,949 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\11. Facelift\app\__init__.py:65]
+2020-08-04 00:00:55,365 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\11. Facelift\app\__init__.py:65]
+2020-08-04 00:03:22,117 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\11. Facelift\app\__init__.py:65]
+2020-08-04 00:04:25,136 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\11. Facelift\app\__init__.py:65]
+2020-08-04 20:59:43,295 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\11. Facelift\app\__init__.py:65]
+2020-08-04 20:59:51,963 ERROR: Exception on /login [GET] [in C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\11. Facelift\app\routes.py", line 59, in login
+    return render_template('login.html', title = 'Sign In', form = form)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\11. Facelift\app\templates\login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\11. Facelift\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\11. Facelift\app\templates\base.html", line 78, in block "content"
+    {% block app_content %}{% endblock %}
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\11. Facelift\app\templates\login.html", line 9, in block "app_content"
+    {{ wtf.quick_form(form) }}
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'wtf' is undefined

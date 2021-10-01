@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+
+    <style type="text/css">
+        .square {
+            width: 100px;
+            height: 100px;
+            margin: 1em;
+            float: left;
+        }
+
+        /*
+            The border command can take up to three arguments: 
+
+                border: width color border-style;
+
+            You can summon each of these elements individually as well: 
+
+                border-color: color;
+                border-style: style;
+                border-width: width;
+
+            Finally, you can summon every border side individually too: 
+
+                border-left-color: color;
+                border-right-style: style;
+                border-bottom-width: thickness;
+
+            The "border-radius" element allows us to round the edges and
+            even allows us to create a circle out of a square div.
+        */
+        #red-div {
+            background-color: indianred;
+            border: thick black solid;
+            border-radius: 1em;
+        }
+        #blue-div {
+            background-color: powderblue;
+            border: thick yellowgreen ridge;
+        }
+        #green-div {
+            background-color: yellowgreen;
+            border: thick black dashed;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="square" id="red-div"></div>
+    <div class="square" id="green-div"></div>
+    <div class="square" id="blue-div"></div>
+</body>
+</html>

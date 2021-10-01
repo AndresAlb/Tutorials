@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Script to embed jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <title>Fading Content</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        #circle {
+            width: 7em;
+            height: 7em;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: thick solid black;
+            background-color: cornflowerblue;
+            color: whitesmoke;
+            margin: 1em;
+        }
+        .square {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: thick solid black;
+            width: 7em;
+            height: 7em;
+            background-color: indianred;
+            color: whitesmoke;
+            margin: 1em;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Fading Out Content</h1>
+    <p id="my-text">The quick brown fox jumped over the lazy dog</p>
+    <p>
+        <button onclick="fadeText()">Fade text</button>
+    </p>
+    <script>
+        $("div").click(function()
+        {
+            $(this).fadeOut("slow", function()
+            {
+                alert("FadeOut has finished");
+            });
+        });
+
+        function fadeText(){
+            $("#my-text").fadeOut("slow");
+        }
+    </script>
+</body>
+</html>

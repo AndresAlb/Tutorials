@@ -1,0 +1,85 @@
+2020-07-28 22:10:59,181 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\8. Followers\app\__init__.py:56]
+2020-07-28 22:12:26,756 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\8. Followers\app\__init__.py:56]
+2020-07-28 22:12:51,605 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\8. Followers\app\__init__.py:56]
+2020-07-28 23:28:06,658 INFO: Hello World startup [in c:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\8. Followers\app\__init__.py:55]
+2020-07-28 23:42:29,436 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\8. Followers\app\__init__.py:55]
+2020-07-28 23:47:18,003 INFO: Hello World startup [in c:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\8. Followers\app\__init__.py:55]
+2020-07-29 20:05:35,685 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\8. Followers\app\__init__.py:55]
+2020-07-29 20:07:01,015 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\8. Followers\app\__init__.py:55]
+2020-07-29 20:10:08,226 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\8. Followers\app\__init__.py:55]
+2020-07-29 20:11:38,298 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\8. Followers\app\__init__.py:55]
+2020-07-30 20:06:15,917 INFO: Hello World startup [in C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\__init__.py:55]
+2020-07-30 20:07:02,491 ERROR: Exception on /index [GET] [in C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\routes.py", line 34, in index
+    return render_template('index.html', title = 'Home', posts = posts)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\templates\index.html", line 25, in template
+    {% include '_post.html' %at}
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+2020-07-30 20:07:07,174 ERROR: Exception on /index [GET] [in C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\routes.py", line 34, in index
+    return render_template('index.html', title = 'Home', posts = posts)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\andre\AppData\Local\Anaconda3\envs\flasktutorial\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\andre\OneDrive\Documents\GitHub\flask-tutorial\9. Pagination\app\templates\index.html", line 25, in template
+    {% include '_post.html' %at}
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'

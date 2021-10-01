@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Elements</title>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Accessing Elements</h1>
+    <p id="my-text">
+        The quick brown fox jumped over the lazy dog
+    </p>
+
+    <script type="text/javascript">
+        // This is a comment in Javascript
+
+        /*
+            This is a multiline comment in Javascript
+        */
+        document.getElementById("my-text").innerHTML = "This text was changed using Javascript"
+    </script>
+
+</body>
+</html>

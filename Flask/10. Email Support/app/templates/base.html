@@ -1,0 +1,38 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Hello World Blog</title>
+      {% else %}
+      <title>Welcome to Hello World Blog</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>
+            Hello World Blog: 
+            <!-- The url_for() function generates URLs using FLask's internal
+            mapping of URLs to view functions. It prevents errors from 
+            happening if we decide to reorganize links in our app -->
+            <a href="{{ url_for('index') }}"> Home </a>
+            {% if current_user.is_anonymous %}
+            <a href="{{ url_for('login') }}"> Login </a>
+            {% else %}
+            <a href="{{ url_for('user', username = current_user.username) }}"> Profile </a>
+            <a href="{{ url_for('logout') }}"> Logout </a>
+            <a href="{{ url_for('explore') }}"> Explore </a>
+            {% endif %}
+        </div>
+        <hr>
+        <!-- flashed messages get deleted after they are retrieved
+        using the get_flashed_messages() function--> 
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li> {{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </body>
+</html>

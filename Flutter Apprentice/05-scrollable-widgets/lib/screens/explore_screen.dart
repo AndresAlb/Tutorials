@@ -4,35 +4,59 @@ import '../components/components.dart';
 import '../models/models.dart';
 import '../api/mock_fooderlich_service.dart';
 
-class ExploreScreen extends StatelessWidget {
-  // 1
-  final mockService = MockFooderlichService();
+class ExploreScreen extends StatefulWidget
+{
 
   ExploreScreen({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  State<ExploreScreen> createState() => _ExploreScreenState();
+
+}
+
+class _ExploreScreenState extends State<ExploreScreen>
+{
+
+  final mockService = MockFooderlichService();
+  late ScrollController _controller;
+
+  @override
+  void initState()
+  { 
+    _controller = ScrollController(); 
+    _controller.addListener(_scrollListener);
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context)
+  {
 
     return FutureBuilder(
 
       future: mockService.getExploreData(),
 
-      builder: (context, AsyncSnapshot<ExploreData> snapshot) {
+      builder: (context, AsyncSnapshot<ExploreData> snapshot)
+      {
 
-        if (snapshot.connectionState == ConnectionState.done) {
+        if (snapshot.connectionState == ConnectionState.done)
+        {
 
           return Scrollbar(
             child: ListView(
+              controller: _controller,
 
               scrollDirection: Axis.vertical,
-              // ignore: lines_longer_than_80_chars, lines_longer_than_80_chars
+
               children: [
 
-                TodayRecipeListView(recipes: snapshot.data?.todayRecipes ?? []),
+                TodayRecipeListView(recipes:
+                snapshot.data?.todayRecipes ?? []),
 
                 const SizedBox(height: 16),
 
-                FriendPostListView(friendPosts: snapshot.data?.friendPosts ?? []),
+                FriendPostListView(
+                    friendPosts: snapshot.data?.friendPosts ?? []),
 
               ],
             ),
@@ -40,11 +64,36 @@ class ExploreScreen extends StatelessWidget {
         }
         else
         {
-          return const Center(child: CircularProgressIndicator());
+            return const Center(child: CircularProgressIndicator());
         }
       },
     );
   }
+
+  void _scrollListener()
+  {
+    // Prints message when user scrolls to the top or the bottom of the list
+    // in the Explore screen
+
+    if (_controller.offset >= _controller.position.maxScrollExtent &&
+        !_controller.position.outOfRange) {
+      print('i am at the bottom!');
+    }
+
+    if (_controller.offset <= _controller.position.minScrollExtent &&
+        !_controller.position.outOfRange) {
+      print('i am at the top!');
+    }
+  }
+
+  @override
+  void dispose()
+  {
+    // Disposes the scrollListener
+    _controller.removeListener(_scrollListener);
+    super.dispose();
+  }
+
 
 
 }

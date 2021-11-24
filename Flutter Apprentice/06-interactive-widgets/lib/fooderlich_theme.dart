@@ -9,7 +9,7 @@ class FooderlichTheme {
       color: Colors.black,
     ),
     headline1: GoogleFonts.openSans(
-      fontSize: 32.0,
+      fontSize: 30.0,
       fontWeight: FontWeight.bold,
       color: Colors.black,
     ),
@@ -37,7 +37,7 @@ class FooderlichTheme {
       color: Colors.white,
     ),
     headline1: GoogleFonts.openSans(
-      fontSize: 32.0,
+      fontSize: 30.0,
       fontWeight: FontWeight.bold,
       color: Colors.white,
     ),

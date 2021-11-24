@@ -38,7 +38,7 @@ class TodayRecipeListView extends StatelessWidget {
                 return buildCard(recipe);
               },
               separatorBuilder: (context, index) {
-                return const SizedBox(width: 16);
+                return const SizedBox(width: 10);
               },
             ),
           ),
